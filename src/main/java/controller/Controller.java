@@ -4,6 +4,9 @@
 
 package controller;
 
+import model.DataBase;
+import model.LoginDuplicateException;
+import model.Logins;
 import model.Model;
 import view.View;
 
@@ -12,7 +15,7 @@ import java.util.Scanner;
 /**
  * Class provides association of Model and View classes.
  */
-public class Controller implements RegexContainer {
+public class Controller {
     /**
      * Model instance.
      */
@@ -23,9 +26,11 @@ public class Controller implements RegexContainer {
     private View view;
 
 
+
     public Controller(Model model, View view) {
         this.model = model;
         this.view = view;
+
     }
 
 
@@ -33,6 +38,8 @@ public class Controller implements RegexContainer {
         Scanner sc = new Scanner(System.in);
         InputNoteNoteBook inputNoteNoteBook = new InputNoteNoteBook(sc, view, model);
         inputNoteNoteBook.inputNote();
+
+
     }
 
 

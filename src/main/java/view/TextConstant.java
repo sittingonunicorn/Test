@@ -18,6 +18,6 @@ public interface TextConstant {
     String STREET = "input.street.data";
     String HOUSE_NUMBER = "input.house.number.data";
     String APARTMENT_NUMBER = "input.apartment.number.data";
-
+    String LOGIN_EXISTS = "login.exists";
 
 }

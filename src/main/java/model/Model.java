@@ -7,7 +7,7 @@ public class Model {
     private String shortName;
     private String login;
     private String comment;
-    private String group;
+    private Groups group;
     private String homeNumber;
     private String mobileNumber;
     private String mobileNumber2;
@@ -26,7 +26,7 @@ public class Model {
     }
 
     public Model(String lastname, String firstname, String patronymic, String shortName, String login, String comment,
-                 String group, String homeNumber, String mobileNumber, String mobileNumber2,
+                 Groups group, String homeNumber, String mobileNumber, String mobileNumber2,
                  String eMail, String skype, String address, String dateInput, String dateChanged) {
         this.lastname = lastname;
         this.firstname = firstname;
@@ -85,11 +85,11 @@ public class Model {
         this.comment = comment;
     }
 
-    public String getGroup() {
+    public Groups getGroup() {
         return group;
     }
 
-    public void setGroup(String group) {
+    public void setGroup(Groups group) {
         this.group = group;
     }
 
@@ -166,11 +166,4 @@ public class Model {
         this.lastname = lastname;
     }
 
-    public String getNickname() {
-        return login;
-    }
-
-    public void setNickname(String nickname) {
-        this.login = nickname;
-    }
 }

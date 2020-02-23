@@ -15,8 +15,8 @@ public class View implements TextConstant {
     public static final ResourceBundle bundle =
             ResourceBundle.getBundle(
                     MESSAGES_BUNDLE_NAME,
-                    new Locale("ua", "UA"));  // Ukrainian
-    //new Locale("en"));        // English
+                   // new Locale("ua", "UA"));  // Ukrainian
+    new Locale("en"));        // English
 
 
     /**
@@ -51,5 +51,8 @@ public class View implements TextConstant {
                 bundle.getString(INPUT_STRING_DATA),
                 bundle.getString(message)));
     }
-
+    public void printString(String message) {
+        printMessage(concatenationString(
+                bundle.getString(message)));
+    }
 }
